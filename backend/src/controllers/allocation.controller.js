@@ -27,6 +27,9 @@ exports.saveAllocations = async (req, res) => {
           row: s.row || null,
           col: s.col || null,
           benchNo: s.benchNo || idx + 1,
+          class: s.class || null,
+          department: s.department || null,
+          originalSheetName: s.originalSheetName || null,
         }));
         rollNumbers = students.map((s) => s.rollno).join(",");
         rollStart = students[0]?.rollno || null;

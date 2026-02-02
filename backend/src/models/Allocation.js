@@ -11,6 +11,9 @@ const studentSchema = new mongoose.Schema(
     row: { type: Number },     // seating row
     col: { type: Number },     // seating column
     benchNo: { type: Number }, // bench number
+    class: String,
+    department: String,
+    originalSheetName: String,
   },
   { _id: false }
 );
