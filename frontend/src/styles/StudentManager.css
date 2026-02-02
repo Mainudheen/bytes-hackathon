@@ -1,11 +1,13 @@
 /* Page Centering */
 .page-container {
   display: flex;
-  justify-content: center;   /* center horizontally */
-  align-items: center;       /* center vertically */
-  height: 100vh;             /* take full viewport height */
-  width: 100%;               /* full width */
+  justify-content: center;   /* keep horizontal centering */
+  align-items: flex-start;   /* ✅ START from top */
+  min-height: 100vh;         /* ✅ allow growth */
+  width: 100%;
+  padding-top: 20px;         /* optional spacing */
 }
+
 
 /* Wrapper */
 .centered-wrapper {
